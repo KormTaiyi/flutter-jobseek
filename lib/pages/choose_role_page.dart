@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jobseek/pages/business_owner_page.dart';
-import 'package:jobseek/pages/job_seeker_page.dart';
+import 'package:jobseek/pages/job%20seeker/job_seeker_login.dart';
+import 'package:jobseek/pages/business%20owner/business_owner_login.dart';
 import 'package:jobseek/shared/themes.dart';
 
 class RoleCardData {
@@ -25,13 +25,13 @@ class ChooseRole extends StatelessWidget {
       image: "assets/images/grandma.png",
       title: "Job Seeker",
       description: "Finding a job here never been easier than before",
-      page: () => const JobSeekerPage(),
+      page: () => JobSeekerLogin(),
     ),
     RoleCardData(
       image: "assets/images/grandfa.png",
       title: "Business Owner",
       description: "Let's recruit your great candidate faster here",
-      page: () => const BusinessOwnerPage(),
+      page: () => const BusinessOwnerLogin(),
     ),
   ];
 
@@ -89,7 +89,6 @@ class ChooseRole extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        SizedBox(height: 10),
         Text(
           "Please select your role to continue. Choose Business Owner if you want to post jobs and manage hiring. Choose Job Seeker if you want to find and apply for jobs.",
           style: TextStyle(height: 1.5, fontSize: AppFonts.body),
