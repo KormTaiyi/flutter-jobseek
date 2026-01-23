@@ -3,7 +3,8 @@ import 'package:jobseek/shared/themes.dart';
 
 class ShareButton extends StatelessWidget {
   final String label;
-  const ShareButton({super.key, required this.label});
+  final Widget link;
+  const ShareButton({super.key, required this.label, required this.link});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,12 @@ class ShareButton extends StatelessWidget {
             borderRadius: BorderRadiusGeometry.circular(10),
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (_) => link),
+          );
+        },
         child: Text(label, style: TextStyle(fontSize: AppFonts.body)),
       ),
     );

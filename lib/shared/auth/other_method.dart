@@ -24,7 +24,7 @@ class OtherMethod extends StatelessWidget {
             const Expanded(child: Divider(thickness: 2, color: Colors.grey)),
           ],
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 15),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: icons.map((iconPath) {

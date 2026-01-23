@@ -89,7 +89,6 @@ class ChooseRole extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        SizedBox(height: 10),
         Text(
           "Please select your role to continue. Choose Business Owner if you want to post jobs and manage hiring. Choose Job Seeker if you want to find and apply for jobs.",
           style: TextStyle(height: 1.5, fontSize: AppFonts.body),
