@@ -31,7 +31,7 @@ class ChooseRole extends StatelessWidget {
       image: "assets/images/grandfa.png",
       title: "Business Owner",
       description: "Let's recruit your great candidate faster here",
-      page: () => const BusinessOwnerLogin(),
+      page: () => BusinessOwnerLogin(),
     ),
   ];
 

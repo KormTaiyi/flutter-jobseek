@@ -1,51 +1,41 @@
 import 'package:flutter/material.dart';
-import 'package:jobseek/pages/job%20seeker/job_seeker_home_page.dart';
-import 'package:jobseek/pages/job%20seeker/job_seeker_register_phone_number.dart';
+import 'package:jobseek/pages/business%20owner/business_owner_home_page.dart';
+import 'package:jobseek/pages/business%20owner/business_owner_register_with_phone_number.dart';
 import 'package:jobseek/shared/auth/auth_inputs.dart';
 import 'package:jobseek/shared/auth/button.dart';
 import 'package:jobseek/shared/auth/logo_auth.dart';
-import 'package:jobseek/shared/auth/other_method.dart';
 import 'package:jobseek/shared/themes.dart';
 
-class JobSeekerRegisterWithEmail extends StatefulWidget {
-  const JobSeekerRegisterWithEmail({super.key});
+class BusinessOwnerRegisterWithEmail extends StatelessWidget {
+  const BusinessOwnerRegisterWithEmail({super.key});
 
-  @override
-  State<JobSeekerRegisterWithEmail> createState() => _CreaetAccountState();
-}
-
-class _CreaetAccountState extends State<JobSeekerRegisterWithEmail> {
   @override
   Widget build(BuildContext context) {
-    final List<String> createIcons = [
-      "assets/icons/mobile-phone.png",
-      "assets/icons/linkin.png",
-      "assets/icons/google-icon.png",
-    ];
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
-              const SizedBox(height: 40),
               LogoAuth(
-                title: "Join as a JobSeeker",
+                title: "Join as a Business Owner",
                 subtitle: "Create your account to get started",
               ),
-              const SizedBox(height: 40),
+              SizedBox(height: 40),
               InputName(),
-              const SizedBox(height: 15),
+              SizedBox(height: 15),
               InputEmail(),
-              const SizedBox(height: 15),
+              SizedBox(height: 15),
+              InputCompanyName(),
+              SizedBox(height: 15),
               Align(
-                alignment: Alignment.centerLeft,
+                alignment: Alignment.topLeft,
                 child: GestureDetector(
                   onTap: () {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => JobSeekerRegisterWithPhoneNumber(),
+                        builder: (_) => BusinessOwnerRegisterWithPhoneNumber(),
                       ),
                     );
                   },
@@ -60,14 +50,12 @@ class _CreaetAccountState extends State<JobSeekerRegisterWithEmail> {
                   ),
                 ),
               ),
-              const SizedBox(height: 15),
+              SizedBox(height: 15),
               InputPassword(),
-              const SizedBox(height: 15),
+              SizedBox(height: 15),
               ConfirmPassword(),
-              const SizedBox(height: 60),
-              ShareButton(label: "Register", link: JobSeekerHomePage()),
-              const SizedBox(height: 50),
-              OtherMethod(title: "Already have an account", icons: createIcons),
+              SizedBox(height: 40),
+              ShareButton(label: "Register", link: BusinessOwnerHomePage()),
             ],
           ),
         ),
