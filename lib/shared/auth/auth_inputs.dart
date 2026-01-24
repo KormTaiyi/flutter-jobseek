@@ -50,7 +50,14 @@ class InputEmail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return TextField(
+      decoration: InputDecoration(
+        hintText: "Email",
+        fillColor: inputFormBgColor,
+        filled: true,
+        border: InputBorder.none,
+      ),
+    );
   }
 }
 
@@ -115,7 +122,7 @@ class _ConfirmPasswordState extends State<ConfirmPassword> {
         TextFormField(
           obscureText: _obscurePassword,
           decoration: InputDecoration(
-            hintText: "Password",
+            hintText: "Confirm password",
             fillColor: inputFormBgColor,
             filled: true,
             border: InputBorder.none,
@@ -138,6 +145,22 @@ class _ConfirmPasswordState extends State<ConfirmPassword> {
           },
         ),
       ],
+    );
+  }
+}
+
+class InputCompanyName extends StatelessWidget {
+  const InputCompanyName({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      decoration: InputDecoration(
+        hintText: "Company name",
+        fillColor: inputFormBgColor,
+        filled: true,
+        border: InputBorder.none,
+      ),
     );
   }
 }

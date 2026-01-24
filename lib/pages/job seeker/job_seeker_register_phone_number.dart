@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jobseek/pages/job%20seeker/job_seeker_home_page.dart';
+import 'package:jobseek/pages/job%20seeker/job_seeker_register_with_email.dart';
 import 'package:jobseek/shared/auth/auth_inputs.dart';
 import 'package:jobseek/shared/auth/button.dart';
 import 'package:jobseek/shared/auth/logo_auth.dart';
@@ -41,7 +43,14 @@ class _JobSeekerRegisterWithPhoneNumberState
               Align(
                 alignment: Alignment.centerLeft,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => JobSeekerRegisterWithEmail(),
+                      ),
+                    );
+                  },
                   child: Text(
                     "Use email address instead",
                     style: TextStyle(
@@ -58,10 +67,7 @@ class _JobSeekerRegisterWithPhoneNumberState
               const SizedBox(height: 10),
               ConfirmPassword(),
               const SizedBox(height: 40),
-              ShareButton(
-                label: "Register",
-                link: JobSeekerRegisterWithPhoneNumber(),
-              ),
+              ShareButton(label: "Register", link: JobSeekerHomePage()),
               const SizedBox(height: 50),
               OtherMethod(title: "Already have an account", icons: createIcons),
             ],
