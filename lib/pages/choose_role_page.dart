@@ -69,7 +69,7 @@ class ChooseRole extends StatelessWidget {
             "JobSeek",
             style: TextStyle(
               color: AppColors.primary,
-              fontSize: AppFonts.title,
+              fontSize: AppFonts.font36,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -85,13 +85,13 @@ class ChooseRole extends StatelessWidget {
         Text(
           "Continue as",
           style: TextStyle(
-            fontSize: AppFonts.subtitle,
+            fontSize: AppFonts.font30,
             fontWeight: FontWeight.w600,
           ),
         ),
         Text(
           "Please select your role to continue. Choose Business Owner if you want to post jobs and manage hiring. Choose Job Seeker if you want to find and apply for jobs.",
-          style: TextStyle(height: 1.5, fontSize: AppFonts.body),
+          style: TextStyle(height: 1.5, fontSize: AppFonts.font16),
         ),
       ],
     );
@@ -131,14 +131,14 @@ class ChooseRole extends StatelessWidget {
                     data.title.toUpperCase(),
                     style: const TextStyle(
                       color: AppColors.primary,
-                      fontSize: AppFonts.regular,
+                      fontSize: AppFonts.font20,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
                   const SizedBox(height: 5),
                   Text(
                     data.description,
-                    style: TextStyle(fontSize: AppFonts.body, height: 1.4),
+                    style: TextStyle(fontSize: AppFonts.font16, height: 1.4),
                   ),
                 ],
               ),

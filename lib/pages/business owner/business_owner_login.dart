@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jobseek/pages/business%20owner/business_owner_home_page.dart';
 import 'package:jobseek/pages/business%20owner/business_owner_register_with_phone_number.dart';
-import 'package:jobseek/pages/job%20seeker/job_seeker_home_page.dart';
 import 'package:jobseek/shared/auth/auth_inputs.dart';
 import 'package:jobseek/shared/auth/button.dart';
 import 'package:jobseek/shared/auth/logo_auth.dart';
@@ -39,12 +39,12 @@ class BusinessOwnerLogin extends StatelessWidget {
                   onTap: () {},
                   child: Text(
                     "Forgot password?",
-                    style: TextStyle(fontSize: AppFonts.body),
+                    style: TextStyle(fontSize: AppFonts.font16),
                   ),
                 ),
               ),
               const SizedBox(height: 40),
-              ShareButton(label: "Login", link: JobSeekerHomePage()),
+              ShareButton(label: "Login", link: BusinessOwnerHomePage()),
               const SizedBox(height: 30),
               OtherMethod(title: "Other login method", icons: loginIcons),
               const SizedBox(height: 100),

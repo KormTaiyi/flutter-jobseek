@@ -21,7 +21,7 @@ class LogoAuth extends StatelessWidget {
         Text(
           title!,
           style: TextStyle(
-            fontSize: AppFonts.subtitle,
+            fontSize: AppFonts.font30,
             fontWeight: FontWeight.w600,
             color: AppColors.primary,
           ),

@@ -18,7 +18,7 @@ class OtherMethod extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Text(
                 title!,
-                style: TextStyle(fontSize: AppFonts.body, color: Colors.black),
+                style: TextStyle(fontSize: AppFonts.font16, color: Colors.black),
               ),
             ),
             const Expanded(child: Divider(thickness: 2, color: Colors.grey)),

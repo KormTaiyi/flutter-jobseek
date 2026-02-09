@@ -25,7 +25,7 @@ class ShareButton extends StatelessWidget {
             MaterialPageRoute(builder: (_) => link),
           );
         },
-        child: Text(label, style: TextStyle(fontSize: AppFonts.body)),
+        child: Text(label, style: TextStyle(fontSize: AppFonts.font16)),
       ),
     );
   }

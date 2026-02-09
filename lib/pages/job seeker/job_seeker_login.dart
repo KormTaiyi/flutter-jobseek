@@ -45,7 +45,7 @@ class _JobSeekerLoginState extends State<JobSeekerLogin> {
                   onTap: () {},
                   child: Text(
                     "Forgot password?",
-                    style: TextStyle(fontSize: AppFonts.body),
+                    style: TextStyle(fontSize: AppFonts.font16),
                   ),
                 ),
               ),
